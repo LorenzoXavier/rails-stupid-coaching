@@ -2,13 +2,39 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$regent-grey: #808c99;
+// $regent-grey: #808c99;
 
-#question {
-background-color: $regent-grey;
-}
+// #question {
+// background-color: $regent-grey;
+// }
+
+// body {
+//   background-color: $regent-grey;
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
 
 body {
-  background-color: $regent-grey;
+  font-family: Roboto;
+  font-weight: 300;
+  padding: 0 24px;
 }
 
+h1 {
+  font-weight: 400;
+}
+
+blockquote {
+  border-left: 6px solid #ddd;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+
+  &.coach {
+    background-color: lightyellow;
+    p { font-weight: 400; }
+  }
+}
+
+cite:before {
+  content: "—"
+}
